@@ -1,6 +1,7 @@
 ## Predicting Pulsar Stars
 
-The project predicting pulsar stars comes from a competition from the organisation Kaggle which has already taken place before starting this project. The project files and the machine learning under taken were all done using Python and presented in Notebooks. The following information is provided from the challenge page:
+The project predicting pulsar stars comes from a competition from the organisation Kaggle which has already taken place before starting this project. The project files and the machine learning under taken were all done using Python and presented in Notebooks. Due to many Neutron Stars there is a lot of data that would need to be individualy tested to see if it also a Pulsar Star, with generating predictions focus can be put on the potential Pulsar Stars first. The following information is provided from the challenge page:
+
 
 ### Description
 Pulsars are a rare type of Neutron star that produce radio emission detectable here on Earth. They are of considerable scientific interest as probes of space-time, the inter-stellar medium, and states of matter. Machine learning tools are now being used to automatically label pulsar candidates to facilitate rapid analysis. Classification systems in particular are being widely adopted,which treat the candidate data sets as binary classification problems.
@@ -33,9 +34,7 @@ robert.lyon '@' manchester.ac.uk
 From <https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate> 
 
 
-
 ### Terminology of data explained:
-
 • Integrated Profile
 "Integrated Profile is the signal obtained from folding/Integrating the pulsar signals w.r.t rotational period"
 From <https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate/discussion/191741> 
@@ -65,41 +64,16 @@ First steps carried out naturally was to get acquainted with the data itself. Me
 
 From the EDA we established that there were missing values within three columns; Excess kurtosis of the integrated profile, Standard deviation of the DM-SNR curve and Skewness of the DM-SNR curve. They were dealt with by implementing k-nearest neighbour imputer within the pipeline process down the line which would insert the mean value the nearest five data points of the missing value.. Removing the rows with missing values would cause to great of a loss of data from a smaller sized data set.
 
-From establishing a method of handling missing values a general overview of the data set was plotted where the data was split by the target, pulsar stars and normal neutron stars.
+From the pair plot we established more visuals to get an overview on potential outliers and if they could prove to cause noise down the line. To get this understanding box plots split by the target class for a consise overview along with a violin plot of the whole column itself. The visuals strongly demonstrated that the data points that acted as outliers where from the data of pulsar stars which is our target therefore the decision was made to keep them and conduct no further cleaning on the data.
 
-
-INSERT PAIRPLOT
-
-
-From the pair plot we established more visuals to get an overview on potential outliers and if they could prove to cause noise down the line. To get this understanding box plots were made along side __historgrams?______. The visuals strongly demonstrated that the data points that acted as outliers where from the data of pulsar stars which is our target therefore the decision was made to keep them and conduct no further cleaning on the data.
 
 ### Model Choices
 Three varying models where chosen based on the aim of the project to predict a binary classification outcome;
 	1. Random Forest Classifier
 	2. Support Vector Machine
 	3. Artificial Neural Network
-All three algorithms were being trained by a different team member with the goal of achieving the most successful predictions and a comparison to be made afterwards to chose the best suited model for this data set and target. Below are snippets of code from each of the models in the final their final pipeline.
-
-SNIPPETS OF CODE + comments to each of ones own model/pipeline 
-
-##### Random Forest Piepline
-The cleaned data was used after applying the cleaning function which left the data only needing to be scaled along with defining that the class wights are balanced within the parameters to skip needing to resample the data. The final pipeline resulted in:
-
-"""
-model_std_rfc = Pipeline([("scaler", StandardScaler()),
-                           ("rfc", RandomForestClassifier(n_estimators = 26,
-                                                         max_depth = 3,
-                                                         max_leaf_nodes = 10,
-                                                         random_state = 42,
-                                                         n_jobs = -1))])
-"""
-
-For an overview of how the models draw their influence from in order to produce their prediction we made graphs for the feature importance of each model and all of them varry from one another:
-
-INSERT ALL THREE GRAPHS
-
-Comments on graphs
+All three algorithms were trained by a different team member with the goal of achieving the most successful predictions and a comparison to be made afterwards to chose the best suited model for this data set and target. 
 
 
 ### Results
-Discussion on the final model choice along with a general summary of the outcome
+The visuals below show the final results from all three different algorithms with the Artificial Neural Network with polynomial features along with Principal Component Analysis was found to return the best results in predicting pulsar stars. 
