@@ -23,8 +23,11 @@ Each candidate is described by 8 continuous variables, and a single class variab
 	9.Class
 
 HTRU 2 Summary
+
 17,898 total examples.
+
 1,639 positive examples.
+
 16,259 negative examples.
 Source:  https://archive.ics.uci.edu/ml/datasets/HTRU2
 Dr Robert Lyon
