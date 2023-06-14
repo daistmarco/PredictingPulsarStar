@@ -95,5 +95,11 @@ The visuals below show the final results from all three different algorithms wit
 
 ![df_results_sc](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/3ea514b4-7245-4454-8334-9ee72966f9f3)
 
-
+		name	accuracy	precision	recall	F1
+	0	RF_Grid	0.982437	0.966216	0.836257	0.896552
+	1	SVM_Grid	0.974454	0.821990	0.918129	0.867403
+	2	ANN	0.978180	0.873563	0.888889	0.881159
+	3	ANN_Poly_PCA	0.984566	0.955128	0.871345	0.911315
+	4	ANN	0.978180	0.873563	0.888889	0.881159
+	5	ANN_Poly_PCA	0.984566	0.955128	0.871345	0.911315
 
