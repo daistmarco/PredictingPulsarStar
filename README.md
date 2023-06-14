@@ -1,6 +1,6 @@
 # Predicting Pulsar Stars
 
-The project predicting pulsar stars comes from a competition from the organisation Kaggle which has already taken place before starting this project. The project files and the machine learning under taken were all done using Python and presented in Notebooks. Due to many Neutron Stars there is a lot of data that would need to be individualy tested to see if it also a Pulsar Star, with generating predictions focus can be put on the potential Pulsar Stars first. The following information is provided from the challenge page:
+The project predicting pulsar stars comes from a competition from the organisation Kaggle which has already taken place before starting this project. The project files and the machine learning under taken were all done using Python and presented in Notebooks. Due to many Neutron Stars there is a lot of data to be researched to find the rare type of neutron star, a pulsar which produces raio emission detecable from Earth. Testing all potential pulsars stars is time consuming, this leads to the goal of the project which is predict if a neutron star is also a pulsar star which can lead to prioritising pedicted pulsar stars over others. The following information is provided from the challenge page:
 
 
 ### Description
@@ -74,7 +74,7 @@ Skewness is a measurement used to describe the symmetry or asymmetry of the bell
 ![skw](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/aca3d64e-dd38-4251-9332-72d8896e3c64)
 
 ### EDA/Cleaning
-First steps carried out naturally was to get acquainted with the data itself. Meaning an understanding of what and where the data came from along with finding any potential hinderance from missing values, implausible values along with an overview of how to deal with potential outliers that could strongly influence the training processes.
+First steps carried out naturally was to get acquainted with the data itself. Meaning an understanding of what and where the data came from along with finding any potential hinderance from missing values, implausible values along with an overview of how to deal with potential outliers that could strongly influence the training processes. It was also noted that all ---------------
 
 From the EDA we established that there were missing values within three columns; Excess kurtosis of the integrated profile, Standard deviation of the DM-SNR curve and Skewness of the DM-SNR curve. They were dealt with by implementing k-nearest neighbour imputer within the pipeline process down the line which would insert the mean value the nearest five data points of the missing value.. Removing the rows with missing values would cause to great of a loss of data from a smaller sized data set.
 
@@ -83,7 +83,6 @@ From the pair plot we established more visuals to get an overview on potential o
 
 ### Model Choices
 Three varying models where chosen based on the aim of the project to predict a binary classification outcome;
-
 	1. Random Forest Classifier
 	2. Support Vector Machine
 	3. Artificial Neural Network
@@ -91,16 +90,16 @@ All three algorithms were trained by a different team member with the goal of ac
 
 
 ### Results
-The visuals below show the final results from all three different algorithms with the Artificial Neural Network with polynomial features along with Principal Component Analysis was found to return the best results in predicting pulsar stars. 
+The visuals below show the final results from all three different algorithms with the Artificial Neural Network with polynomial features along with Principal Component Analysis was found to return the best results in predicting pulsar stars. The results are based on having used the models with a test set which was not used to improve any of the models to allow us to get a more accurate estimation of how it performs and of course the final aim data set was also put through the ANN model to get the final predictions. We do not have access to the results of the aim which leaves the test trial to be our main source for judgement. The measurement which we use for judgement is the F1 score which the avergae of precision and recall and is more suitable when class distribution is uneven. 
 
 ![df_results_sc](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/3ea514b4-7245-4454-8334-9ee72966f9f3)
 
-	  	name	 accuracy	precision	recall		F1
-		----------------------------------------------------------------
-	0 	RF_Grid	 0.982437	0.966216	0.836257	0.896552
-	1      SVM_Grid	 0.974454	0.821990	0.918129	0.867403
-	2 	    ANN	 0.978180	0.873563	0.888889	0.881159
-	3  ANN_Poly_PCA	 0.984566	0.955128	0.871345	0.911315
-	4 	    ANN	 0.978180	0.873563	0.888889	0.881159
-	5  ANN_Poly_PCA	 0.984566	0.955128	0.871345	0.911315
+	  	   name	  accuracy	precision	recall		F1
+		-------- -------------------------------------------------------
+	0 	RF_Grid	  0.982437	0.966216	0.836257	0.896552
+	1      SVM_Grid	  0.974454	0.821990	0.918129	0.867403
+	2 	    ANN	  0.978180	0.873563	0.888889	0.881159
+	3  ANN_Poly_PCA	  0.984566	0.955128	0.871345	0.911315
+	4 	    ANN	  0.978180	0.873563	0.888889	0.881159
+	5  ANN_Poly_PCA	  0.984566	0.955128	0.871345	0.911315
 	
