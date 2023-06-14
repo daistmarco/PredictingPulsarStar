@@ -83,6 +83,7 @@ From the pair plot we established more visuals to get an overview on potential o
 
 ### Model Choices
 Three varying models where chosen based on the aim of the project to predict a binary classification outcome;
+
 	1. Random Forest Classifier
 	2. Support Vector Machine
 	3. Artificial Neural Network
