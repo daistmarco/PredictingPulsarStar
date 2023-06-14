@@ -1,6 +1,6 @@
-Predicting Pulsar Stars
+#Predicting Pulsar Stars
 
-The project predicting pulsar stars comes from a compition from the organisation Kaggle which has already taken place before starting this project. The following information is provided from the challenge page:
+####The project predicting pulsar stars comes from a compition from the organisation Kaggle which has already taken place before starting this project. The following information is provided from the challenge page:
 
 Description
 Pulsars are a rare type of Neutron star that produce radio emission detectable here on Earth. They are of considerable scientific interest as probes of space-time, the inter-stellar medium, and states of matter. Machine learning tools are now being used to automatically label pulsar candidates to facilitate rapid analysis. Classification systems in particular are being widely adopted,which treat the candidate data sets as binary classification problems.
