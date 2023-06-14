@@ -74,7 +74,7 @@ Skewness is a measurement used to describe the symmetry or asymmetry of the bell
 ![skw](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/aca3d64e-dd38-4251-9332-72d8896e3c64)
 
 ### EDA/Cleaning
-First steps carried out naturally was to get acquainted with the data itself. Meaning an understanding of what and where the data came from along with finding any potential hinderance from missing values, implausible values along with an overview of how to deal with potential outliers that could strongly influence the training processes. It was also noted that all ---------------
+First steps carried out naturally was to get acquainted with the data itself. Meaning an understanding of what and where the data came from along with finding any potential hinderance from missing values, implausible values along with an overview of how to deal with potential outliers that could strongly influence the training processes.
 
 From the EDA we established that there were missing values within three columns; Excess kurtosis of the integrated profile, Standard deviation of the DM-SNR curve and Skewness of the DM-SNR curve. They were dealt with by implementing k-nearest neighbour imputer within the pipeline process down the line which would insert the mean value the nearest five data points of the missing value.. Removing the rows with missing values would cause to great of a loss of data from a smaller sized data set.
 
@@ -103,3 +103,5 @@ The visuals below show the final results from all three different algorithms wit
 	4 	    ANN	  0.978180	0.873563	0.888889	0.881159
 	5  ANN_Poly_PCA	  0.984566	0.955128	0.871345	0.911315
 	
+Picture or embedded format for the results table?
+Due to all the values being close to on another I question if a graph will bring a benefit in visual as it will be hard to distinguish the difference with labelling everything which could make it feel like noise and cluster it
