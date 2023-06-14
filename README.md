@@ -29,14 +29,23 @@ HTRU 2 Summary
 1,639 positive examples.
 
 16,259 negative examples.
+
 Source:  https://archive.ics.uci.edu/ml/datasets/HTRU2
+
 Dr Robert Lyon
+
 University of Manchester
+
 School of Physics and Astronomy
+
 Alan Turing Building
+
 Manchester M13 9PL
+
 United Kingdom
-robert.lyon '@' manchester.ac.uk
+
+robert.lyon@manchester.ac.uk
+
 From <https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate> 
 
 
