@@ -63,7 +63,7 @@ IMAGE------------------------------------
 ## EDA/Cleaning
 First steps carried out naturally was to get acquainted with the data itself. Meaning an understanding of what and where the data came from along with finding any potential hinderance from missing values, implausible values along with an overview of how to deal with potential outliers that could strongly influence the training processes.
 
-From the EDA we established that there were missing values within three columns __________ which were dealt with by implementing k-nearest neighbour imputer within the pipeline process down the line which would insert the mean value the nearest five data points of the missing value.. Removing the rows with missing values would cause to great of a loss of data from a smaller sized data set.
+From the EDA we established that there were missing values within three columns; Excess kurtosis of the integrated profile, Standard deviation of the DM-SNR curve and Skewness of the DM-SNR curve. They were dealt with by implementing k-nearest neighbour imputer within the pipeline process down the line which would insert the mean value the nearest five data points of the missing value.. Removing the rows with missing values would cause to great of a loss of data from a smaller sized data set.
 
 From establishing a method of handling missing values a general overview of the data set was plotted where the data was split by the target, pulsar stars and normal neutron stars.
 
