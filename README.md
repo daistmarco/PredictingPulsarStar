@@ -1,9 +1,33 @@
 # Predicting Pulsar Stars
 
-The project predicting pulsar stars comes from a competition from the organisation Kaggle which has already taken place before starting this project. The project files and the machine learning under taken were all done using Python and presented in Notebooks. Due to many Neutron Stars there is a lot of data to be researched to find the rare type of neutron star, a pulsar which produces raio emission detecable from Earth. Testing all potential pulsars stars is time consuming, this leads to the goal of the project which is predict if a neutron star is also a pulsar star which can lead to prioritising pedicted pulsar stars over others. The following information is provided from the challenge page:
+The project predicting pulsar stars comes from a competition from the organisation Kaggle which has already taken place before starting this project. The project files and the machine learning under taken were all done using Python and presented in Notebooks. Due to many Neutron Stars there is a lot of data to be researched to find the rare type of neutron star, a pulsar which produces raio emission detecable from Earth. Testing all potential pulsars stars is time consuming, this leads to the goal of the project which is predict if a neutron star is also a pulsar star which can lead to prioritising pedicted pulsar stars over others. 
+
+
+### Installation and Setup
+These are the necessary components you are need in order to set the project up localy.
+
+The project was carried out in JupyterLab using Python Version_________.
+
+Listed below are all necessary dependencies you require to replicate the project yourself:
+- os
+- pickle
+- pandas
+- numpy
+- seaborn
+- matplotlib
+- IPython
+- sklearn
+- imblearn
+- tensorflow
+- keras
+- xgboost
+- joblib
 
 
 ### Description
+The following information is provided from the challenge page:
+
+
 Pulsars are a rare type of Neutron star that produce radio emission detectable here on Earth. They are of considerable scientific interest as probes of space-time, the inter-stellar medium, and states of matter. Machine learning tools are now being used to automatically label pulsar candidates to facilitate rapid analysis. Classification systems in particular are being widely adopted,which treat the candidate data sets as binary classification problems.
 
 Credit goes to Pavan Raj ( https://www.kaggle.com/pavanraj159) from where the dataset has been collected. For the purpose of creating a challenge, certain modifications have been done to the dataset.
