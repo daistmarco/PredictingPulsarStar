@@ -82,6 +82,17 @@ All three algorithms were being trained by a different team member with the goal
 
 SNIPPETS OF CODE + comments to each of ones own model/pipeline 
 
+##### Random Forest Piepline
+The cleaned data was used after applying the cleaning function which left the data only needing to be scaled along with defining that the class wights are balanced within the parameters to skip needing to resample the data. The final pipeline resulted in:
+
+"""
+model_std_rfc = Pipeline([("scaler", StandardScaler()),
+                           ("rfc", RandomForestClassifier(n_estimators = 26,
+                                                         max_depth = 3,
+                                                         max_leaf_nodes = 10,
+                                                         random_state = 42,
+                                                         n_jobs = -1))])
+"""
 
 For an overview of how the models draw their influence from in order to produce their prediction we made graphs for the feature importance of each model and all of them varry from one another:
 
