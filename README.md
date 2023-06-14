@@ -71,8 +71,7 @@ The excess kurtosis describes the tails of the bell-shaped distribution curve wh
 • Skewness
 Skewness is a measurement used to describe the symmetry or asymmetry of the bell-curve.
 
-IMAGE------------------------------------
-
+![skw](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/aca3d64e-dd38-4251-9332-72d8896e3c64)
 
 ### EDA/Cleaning
 First steps carried out naturally was to get acquainted with the data itself. Meaning an understanding of what and where the data came from along with finding any potential hinderance from missing values, implausible values along with an overview of how to deal with potential outliers that could strongly influence the training processes.
