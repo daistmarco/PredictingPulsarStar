@@ -130,3 +130,9 @@ The visuals below show the final results from all three different algorithms wit
 	
 Picture or embedded format for the results table?
 Due to all the values being close to on another I question if a graph will bring a benefit in visual as it will be hard to distinguish the difference with labelling everything which could make it feel like noise and cluster it
+
+
+Do we like the look of the chart? If so I will add more detail to it but it may still look very underwhelming?
+
+![bar_results](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/0bf8613c-6fdc-46c4-b479-cab5848490ec)
+
