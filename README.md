@@ -74,7 +74,7 @@ robert.lyon@manchester.ac.uk
 From <https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate> 
 
 
-### Terminology of data explained:
+### Terminology of data explained
 • Integrated Profile
 "Integrated Profile is the signal obtained from folding/Integrating the pulsar signals w.r.t rotational period"
 From <https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate/discussion/191741> 
