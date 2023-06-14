@@ -1,4 +1,4 @@
-Predicting Pulsar Stars
+# Predicting Pulsar Stars
 
 The project predicting pulsar stars comes from a compition from the organisation Kaggle which has already taken place before starting this project. The following information is provided from the challenge page:
 
