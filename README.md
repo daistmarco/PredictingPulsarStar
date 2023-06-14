@@ -1,4 +1,4 @@
-## Predicting Pulsar Stars
+# Predicting Pulsar Stars
 
 The project predicting pulsar stars comes from a competition from the organisation Kaggle which has already taken place before starting this project. The project files and the machine learning under taken were all done using Python and presented in Notebooks. Due to many Neutron Stars there is a lot of data that would need to be individualy tested to see if it also a Pulsar Star, with generating predictions focus can be put on the potential Pulsar Stars first. The following information is provided from the challenge page:
 
@@ -92,3 +92,8 @@ All three algorithms were trained by a different team member with the goal of ac
 
 ### Results
 The visuals below show the final results from all three different algorithms with the Artificial Neural Network with polynomial features along with Principal Component Analysis was found to return the best results in predicting pulsar stars. 
+
+![df_results_sc](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/3ea514b4-7245-4454-8334-9ee72966f9f3)
+
+
+
