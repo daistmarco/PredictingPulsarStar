@@ -10,7 +10,7 @@ The following are the team members of the project:
 
 Joseph ___ : <https://github.com/Dabbeljuh>
 
-Marco ____ : <https://github.com/daistmarco>
+Marco Fischer : <https://github.com/daistmarco>
 
 Kathrin Muller: <https://github.com/KathrinMM>
 
