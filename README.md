@@ -8,14 +8,14 @@ The project predicting pulsar stars comes from a competition from the organisati
 
 The following are the team members of the project:
 
-Joseph ___ : <https://github.com/Dabbeljuh>
+Joseph Wiesemeier : <https://github.com/Dabbeljuh>
 
 Marco Fischer : <https://github.com/daistmarco>
 
 Kathrin Muller: <https://github.com/KathrinMM>
 
 
-### Installation and Setup
+## Installation and Setup
 This project provides tools for analyzing the HTRU2 dataset using machine learning techniques. One of the main functions provided is the ann_prediction function, which allows you to make predictions on new data using a pre-trained ANN model. These are the necessary components you are need in order to set the project up localy. The data is linked within the information below which was provided from kaggle that leads you to the changed data set provided by kaggle which had been altered for this competition, where the original data set from the University of Manchester has no missing values.
 
 The project was carried out in JupyterLab using Python Version 3.9 and 3.11 interchangeably.
@@ -32,12 +32,11 @@ Listed below are all necessary dependencies you require to replicate the project
 - imblearn
 - tensorflow
 - keras
-- xgboost
 - joblib
 
 To handle the data in the same state as we have you will need to clean it using the functions that are within the provided notebooks if you wish to go through the steps, otherwise the ANN prediction model has been exported after being trained and is ready to use and is found in the models folder.
 
-### Description
+## Description
 The following information is provided from the challenge page:
 
 
@@ -86,7 +85,7 @@ robert.lyon@manchester.ac.uk
 From <https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate> 
 
 
-### Terminology of data explained
+## Terminology of data explained
 • Integrated Profile
 "Integrated Profile is the signal obtained from folding/Integrating the pulsar signals w.r.t rotational period"
 From <https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate/discussion/191741> 
@@ -111,7 +110,7 @@ Skewness is a measurement used to describe the symmetry or asymmetry of the bell
 ![skw](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/93c0485a-7acf-4ba5-b386-c1c633586b45)
 
 
-### EDA/Cleaning
+## EDA/Cleaning
 First steps carried out naturally was to get acquainted with the data itself. Meaning an understanding of what and where the data came from along with finding any potential hinderance from missing values, implausible values along with an overview of how to deal with potential outliers that could strongly influence the training processes.
 
 From the EDA we established that there were missing values within three columns; Excess kurtosis of the integrated profile, Standard deviation of the DM-SNR curve and Skewness of the DM-SNR curve. They were dealt with by implementing k-nearest neighbour imputer within the pipeline process down the line which would insert the mean value the nearest five data points of the missing value.. Removing the rows with missing values would cause to great of a loss of data from a smaller sized data set.
@@ -119,7 +118,7 @@ From the EDA we established that there were missing values within three columns;
 From the pair plot we established more visuals to get an overview on potential outliers and if they could prove to cause noise down the line. To get this understanding box plots split by the target class for a consise overview along with a violin plot of the whole column itself. The visuals strongly demonstrated that the data points that acted as outliers where from the data of pulsar stars which is our target therefore the decision was made to keep them and conduct no further cleaning on the data.
 
 
-### Model Choices
+## Model Choices
 Three varying models where chosen based on the aim of the project to predict a binary classification outcome;
 	1. Random Forest Classifier
 	2. Support Vector Machine
@@ -127,7 +126,7 @@ Three varying models where chosen based on the aim of the project to predict a b
 All three algorithms were trained by a different team member with the goal of achieving the most successful predictions and a comparison to be made afterwards to chose the best suited model for this data set and target. 
 
 
-### Results
+## Results
 The visuals below show the final results from all three different algorithms with the Artificial Neural Network with polynomial features along with Principal Component Analysis was found to return the best results in predicting pulsar stars. The results are based on having used the models with a test set which was not used to improve any of the models to allow us to get a more accurate estimation of how it performs and of course the final aim data set was also put through the ANN model to get the final predictions. We do not have access to the results of the aim which leaves the test trial to be our main source for judgement. The measurement which we use for judgement is the F1 score which the avergae of precision and recall and is more suitable when class distribution is uneven. 
 
 
