@@ -1,5 +1,5 @@
 
-![pulsar_star_wp](https://github.com/daistmarco/PredictingPulsarStar/assets/93286641/c30ce3b0-f9ac-4318-aff1-c262d168aeb6)
+![pulsar_star_wp](https://github.com/daistmarco/PredictingPulsarStar/assets/93286641/acc4eee3-d1dc-4c31-a5a4-0df5a0afec02)
 
 # Predicting Pulsar Stars
 
