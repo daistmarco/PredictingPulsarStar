@@ -129,5 +129,6 @@ Due to all the values being close to on another I question if a graph will bring
 
 Do we like the look of the chart? If so I will add more detail to it but it may still look very underwhelming?
 
-![bar_results](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/0bf8613c-6fdc-46c4-b479-cab5848490ec)
+
+![bar_results](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/aeb61799-9168-403e-869a-bea688a60a69)
 
