@@ -105,7 +105,8 @@ The excess kurtosis describes the tails of the bell-shaped distribution curve wh
 • Skewness
 Skewness is a measurement used to describe the symmetry or asymmetry of the bell-curve.
 
-![skw](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/aca3d64e-dd38-4251-9332-72d8896e3c64)
+![skw](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/93c0485a-7acf-4ba5-b386-c1c633586b45)
+
 
 ### EDA/Cleaning
 First steps carried out naturally was to get acquainted with the data itself. Meaning an understanding of what and where the data came from along with finding any potential hinderance from missing values, implausible values along with an overview of how to deal with potential outliers that could strongly influence the training processes.
@@ -126,7 +127,8 @@ All three algorithms were trained by a different team member with the goal of ac
 ### Results
 The visuals below show the final results from all three different algorithms with the Artificial Neural Network with polynomial features along with Principal Component Analysis was found to return the best results in predicting pulsar stars. The results are based on having used the models with a test set which was not used to improve any of the models to allow us to get a more accurate estimation of how it performs and of course the final aim data set was also put through the ANN model to get the final predictions. We do not have access to the results of the aim which leaves the test trial to be our main source for judgement. The measurement which we use for judgement is the F1 score which the avergae of precision and recall and is more suitable when class distribution is uneven. 
 
-![df_results_sc](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/3ea514b4-7245-4454-8334-9ee72966f9f3)
+
+![df_results_sc](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/0fdb2c44-677c-4226-bd14-121d2160d57f)
 
 	
 Picture or embedded format for the results table?
