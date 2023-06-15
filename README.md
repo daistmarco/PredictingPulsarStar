@@ -128,7 +128,7 @@ All three algorithms were trained by a different team member with the goal of ac
 The visuals below show the final results from all three different algorithms with the Artificial Neural Network with polynomial features along with Principal Component Analysis was found to return the best results in predicting pulsar stars. The results are based on having used the models with a test set which was not used to improve any of the models to allow us to get a more accurate estimation of how it performs and of course the final aim data set was also put through the ANN model to get the final predictions. We do not have access to the results of the aim which leaves the test trial to be our main source for judgement. The measurement which we use for judgement is the F1 score which the avergae of precision and recall and is more suitable when class distribution is uneven. 
 
 
-![df_results_sc](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/0fdb2c44-677c-4226-bd14-121d2160d57f)
+![df_results_sc](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/f9e96535-2629-4da4-92fa-37855d96e05b)
 
 	
 Picture or embedded format for the results table?
