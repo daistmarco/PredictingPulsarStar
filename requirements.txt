@@ -2,11 +2,9 @@ absl-py==1.4.0
 asttokens==2.2.1
 astunparse==1.6.3
 backcall==0.2.0
-backports.functools-lru-cache @ file:///home/conda/feedstock_root/build_artifacts/backports.functools_lru_cache_1618230623929/work
 cachetools==5.3.0
 certifi==2023.5.7
 charset-normalizer==3.1.0
-colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1666700638685/work
 comm==0.1.2
 contourpy==1.0.7
 cycler==0.11.0
@@ -24,7 +22,6 @@ h5py==3.8.0
 idna==3.4
 imbalanced-learn==0.10.1
 imblearn==0.0
-importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1682176699712/work
 ipykernel==6.21.0
 ipython==8.9.0
 jax==0.4.10
@@ -38,9 +35,7 @@ libclang==16.0.0
 Markdown==3.4.3
 MarkupSafe==2.1.2
 matplotlib==3.7.1
-matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1660814786464/work
 ml-dtypes==0.1.0
-nest-asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1664684991461/work
 numpy==1.23.5
 oauthlib==3.2.2
 opt-einsum==3.3.0
@@ -49,7 +44,6 @@ pandas==2.0.2
 parso==0.8.3
 pickleshare==0.7.5
 Pillow==9.5.0
-platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1683850015520/work
 prompt-toolkit==3.0.36
 protobuf==4.23.2
 psutil==5.9.4
@@ -69,7 +63,6 @@ scikit-learn==1.2.2
 scipy==1.10.1
 seaborn==0.12.2
 six==1.16.0
-sklearn==0.0.post5
 stack-data==0.6.2
 tensorboard==2.12.3
 tensorboard-data-server==0.7.0
@@ -81,11 +74,8 @@ termcolor==2.3.0
 threadpoolctl==3.1.0
 tornado==6.2
 traitlets==5.9.0
-typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1685045523825/work
 tzdata==2023.3
 urllib3==1.26.16
 wcwidth==0.2.6
 Werkzeug==2.3.4
 wrapt==1.14.1
-xgboost==1.7.5
-zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1677313463193/work
