@@ -6,7 +6,9 @@ The project predicting pulsar stars comes from a competition from the organisati
 The following are the team members of the project:
 
 Joseph ___ : <https://github.com/Dabbeljuh>
+
 Marco ____ : <https://github.com/daistmarco>
+
 Kathrin Muller: <https://github.com/KathrinMM>
 
 
