@@ -2,7 +2,7 @@
 
 # Predicting Pulsar Stars
 
-This project aims to predict whether a neutron star is also a pulsar star using machine learning techniques. The goal is to identify rare types of neutron stars that emit detectable radio emissions from Earth. By accurately predicting pulsar stars, prioritization can be given to further research and analysis.
+This project aims to predict whether a candidate in the dataset is a pulsar using machine learning techniques. In practice, the detection of pulsar signals is challenging due to the presence of radio frequency interference (RFI) and noise. Almost all detections are caused by RFI and noise, making it difficult to find legitimate signals. The goal is to identify these rare types of neutron stars that emit detectable radio emissions from Earth. By accurately predicting pulsar stars, prioritization can be given to further research and analysis.
 
 ## Team Members
 
