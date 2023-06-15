@@ -1,144 +1,100 @@
-
 ![pulsar_star_wp](https://github.com/daistmarco/PredictingPulsarStar/assets/93286641/acc4eee3-d1dc-4c31-a5a4-0df5a0afec02)
 
 # Predicting Pulsar Stars
 
-The project predicting pulsar stars comes from a competition from the organisation Kaggle which has already taken place before starting this project. The project files and the machine learning under taken were all done using Python and presented in Notebooks. Due to many Neutron Stars there is a lot of data to be researched to find the rare type of neutron star, a pulsar which produces radio emission detecable from Earth. Testing all potential pulsars stars is time consuming, this leads to the goal of the project which is predict if a neutron star is also a pulsar star which can lead to prioritising pedicted pulsar stars over others. 
+This project aims to predict whether a neutron star is also a pulsar star using machine learning techniques. The goal is to identify rare types of neutron stars that emit detectable radio emissions from Earth. By accurately predicting pulsar stars, prioritization can be given to further research and analysis.
 
+## Team Members
 
-The following are the team members of the project:
-
-Joseph Wiesemeier : <https://github.com/Dabbeljuh>
-
-Marco Fischer : <https://github.com/daistmarco>
-
-Kathrin Muller: <https://github.com/KathrinMM>
-
+- Joseph Wiesemeier: [GitHub](https://github.com/Dabbeljuh)
+- Marco Fischer: [GitHub](https://github.com/daistmarco)
+- Kathrin Muller: [GitHub](https://github.com/KathrinMM)
 
 ## Installation and Setup
-This project provides tools for analyzing the HTRU2 dataset using machine learning techniques. One of the main functions provided is the ann_prediction function, which allows you to make predictions on new data using a pre-trained ANN model. These are the necessary components you are need in order to set the project up localy. The data is linked within the information below which was provided from kaggle that leads you to the changed data set provided by kaggle which had been altered for this competition, where the original data set from the University of Manchester has no missing values.
 
-The project was carried out in JupyterLab using Python Version 3.9 and 3.11 interchangeably.
+To set up the project locally, follow these steps:
 
-Listed below are all necessary dependencies you require to replicate the project yourself:
-- os
-- pickle
-- pandas
-- numpy
-- seaborn
-- matplotlib
-- IPython
-- sklearn
-- imblearn
-- tensorflow
-- keras
-- joblib
+1. Clone the repository:
+```
+git clone https://github.com/daistmarco/PredictingPulsarStar.git
+```
+2. Navigate to the project directory:
+```
+cd your-repository
+```
+3. Install the required dependencies:
+```
+pip install -r requirements.txt
+```
+4. Download the modified dataset and place it in the project directory. The original dataset can be acquired from the link [Predicting a Pulsar Star](https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate).
 
-To handle the data in the same state as we have you will need to clean it using the functions that are within the provided notebooks if you wish to go through the steps, otherwise the ANN prediction model has been exported after being trained and is ready to use and is found in the models folder.
+5. Ensure that the following files are located in the "models" folder:
+- `cleaner.pkl`: The saved cleaner object used for data preprocessing.
+- `fitted_ANN_preprocessing_pipeline.pkl`: The saved preprocessing pipeline used for the ANN model.
+- `ann.h5`: The trained Artificial Neural Network model.
+- `random_forest.pkl`: The trained Random Forest Classifier model.
+- `svm.pkl`: The trained Support Vector Machine model.
 
-## Description
-The following information is provided from the challenge page:
+**Note:** If any of the above files are missing, the corresponding functionality may not work as expected.
 
-
-Pulsars are a rare type of Neutron star that produce radio emission detectable here on Earth. They are of considerable scientific interest as probes of space-time, the inter-stellar medium, and states of matter. Machine learning tools are now being used to automatically label pulsar candidates to facilitate rapid analysis. Classification systems in particular are being widely adopted,which treat the candidate data sets as binary classification problems.
-
-Credit goes to Pavan Raj ( https://www.kaggle.com/pavanraj159) from where the dataset has been collected. For the purpose of creating a challenge, certain modifications have been done to the dataset.
-Original dataset can be acquired from the link Predicting a Pulsar Star ( https://www.kaggle.com/pavanraj159/predicting-a-pulsar-star)
-Attribute Information:
-
-Each candidate is described by 8 continuous variables, and a single class variable. The first four are simple statistics obtained from the integrated pulse profile (folded profile). This is an array of continuous variables that describe a longitude-resolved version of the signal that has been averaged in both time and frequency . The remaining four variables are similarly obtained from the DM-SNR curve . These are summarised below:
-
-	1.Mean of the integrated profile.
-	2.Standard deviation of the integrated profile.
-	3.Excess kurtosis of the integrated profile.
-	4.Skewness of the integrated profile.
-	5.Mean of the DM-SNR curve.
-	6.Standard deviation of the DM-SNR curve.
-	7.Excess kurtosis of the DM-SNR curve.
-	8.Skewness of the DM-SNR curve.
-	9.Class
-
-HTRU 2 Summary
-
-17,898 total examples.
-
-1,639 positive examples.
-
-16,259 negative examples.
-
-Source:  https://archive.ics.uci.edu/ml/datasets/HTRU2
-
-Dr Robert Lyon
-
-University of Manchester
-
-School of Physics and Astronomy
-
-Alan Turing Building
-
-Manchester M13 9PL
-
-United Kingdom
-
-robert.lyon@manchester.ac.uk
-
-From <https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate> 
+Once the setup is complete, you can use the provided functions, such as `ann_prediction(csv_file)`, to make predictions on new data using the pre-trained models.
 
 
-## Terminology of data explained
-• Integrated Profile
-"Integrated Profile is the signal obtained from folding/Integrating the pulsar signals w.r.t rotational period"
-From <https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate/discussion/191741> 
-This is a unique measurement and can be seen as an equivalent to a thumbprint.
+## Dataset
 
-• DM-SNR Curve
-"Dispersion Measure of the Signal to Noise Ratio (column density of free electrons along the line of sight)"
-From <https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate/discussion/191741> 
+The project utilizes a modified version of the HTRU2 dataset, originally collected by Pavan Raj and available on Kaggle. Pulsars are a rare type of neutron star that produce radio emissions detectable on Earth. The dataset consists of 8 continuous variables and a single class variable.
 
-• Mean
-The average of the numbers: sum of sample size  / sample size count which can be easily influenced by outliers. Extreme values on either end of the spectrum.
+The first four variables are simple statistics obtained from the integrated pulse profile (folded profile), representing a longitude-resolved version of the signal that has been averaged in both time and frequency. The remaining four variables are obtained from the DM-SNR curve.
 
-• Std. Dev
-The standard deviation is a measurement of how the data is dispered in relation to the mean. Mean is the 50% benchmark while +1 std dev away is 75% and -1 is 25% benchmarks.
+For the purpose of creating a challenge, certain modifications have been made to the dataset. The modified version used in this project can be obtained from the following link: [Predicting Pulsar Star (Intermediate)](https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate).
 
-• Excess Kurtosis
-The excess kurtosis describes the tails of the bell-shaped distribution curve which having lots of outliers will cause it to have a fat tails.
+## Attribute Information
 
-• Skewness
-Skewness is a measurement used to describe the symmetry or asymmetry of the bell-curve.
+The dataset contains the following attributes:
 
-![skw](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/93c0485a-7acf-4ba5-b386-c1c633586b45)
+1. Mean of the integrated profile.
+2. Standard deviation of the integrated profile.
+3. Excess kurtosis of the integrated profile.
+4. Skewness of the integrated profile.
+5. Mean of the DM-SNR curve.
+6. Standard deviation of the DM-SNR curve.
+7. Excess kurtosis of the DM-SNR curve.
+8. Skewness of the DM-SNR curve.
+9. Class (target variable)
 
+The dataset contains a total of 17,898 examples, with 1,639 positive examples (pulsar stars) and 16,259 negative examples.
+
+The credit for the dataset goes to Pavan Raj. The dataset was modified for the purpose of creating this challenge.
 
 ## EDA/Cleaning
-First steps carried out naturally was to get acquainted with the data itself. Meaning an understanding of what and where the data came from along with finding any potential hinderance from missing values, implausible values along with an overview of how to deal with potential outliers that could strongly influence the training processes.
 
-From the EDA we established that there were missing values within three columns; Excess kurtosis of the integrated profile, Standard deviation of the DM-SNR curve and Skewness of the DM-SNR curve. They were dealt with by implementing k-nearest neighbour imputer within the pipeline process down the line which would insert the mean value the nearest five data points of the missing value.. Removing the rows with missing values would cause to great of a loss of data from a smaller sized data set.
-
-From the pair plot we established more visuals to get an overview on potential outliers and if they could prove to cause noise down the line. To get this understanding box plots split by the target class for a consise overview along with a violin plot of the whole column itself. The visuals strongly demonstrated that the data points that acted as outliers where from the data of pulsar stars which is our target therefore the decision was made to keep them and conduct no further cleaning on the data.
-
+The initial steps involved understanding the data and addressing missing values and outliers. Three columns had missing values, which were imputed using the k-nearest neighbor imputer. Exploratory Data Analysis (EDA) techniques, such as box plots and violin plots, were used to identify and analyze outliers. It was observed that the outliers belonged to the pulsar star data, and no further cleaning was performed.
 
 ## Model Choices
-Three varying models where chosen based on the aim of the project to predict a binary classification outcome;
-	1. Random Forest Classifier
-	2. Support Vector Machine
-	3. Artificial Neural Network
-All three algorithms were trained by a different team member with the goal of achieving the most successful predictions and a comparison to be made afterwards to chose the best suited model for this data set and target. 
 
+Three different models were chosen for the binary classification task:
+
+1. Random Forest Classifier
+2. Support Vector Machine
+3. Artificial Neural Network (ANN)
+
+Each team member trained a different model, and the performance of all models was compared to select the best model for this dataset.
 
 ## Results
-The visuals below show the final results from all three different algorithms with the Artificial Neural Network with polynomial features along with Principal Component Analysis was found to return the best results in predicting pulsar stars. The results are based on having used the models with a test set which was not used to improve any of the models to allow us to get a more accurate estimation of how it performs and of course the final aim data set was also put through the ANN model to get the final predictions. We do not have access to the results of the aim which leaves the test trial to be our main source for judgement. The measurement which we use for judgement is the F1 score which the avergae of precision and recall and is more suitable when class distribution is uneven. 
 
+The performance of the models was evaluated using the F1 score, which is the average of precision and recall. The Artificial Neural Network model with polynomial features and Principal Component Analysis achieved the highest F1 score and was selected as the best model for predicting pulsar stars.
 
 ![df_results_sc](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/f9e96535-2629-4da4-92fa-37855d96e05b)
 
-	
-Picture or embedded format for the results table?
-Due to all the values being close to on another I question if a graph will bring a benefit in visual as it will be hard to distinguish the difference with labelling everything which could make it feel like noise and cluster it
+## Prediction Function
 
+As a result of the project, a function called ann_prediction was developed. This function allows making predictions on data from a CSV file using the pre-trained Artificial Neural Network (ANN) model. The function loads the model and performs the necessary data preprocessing before making predictions. Please refer to the function documentation for usage instructions.
 
-Do we like the look of the chart? If so I will add more detail to it but it may still look very underwhelming?
+Please note that the pre-trained ANN model, the cleaner object, and the preprocessing pipeline used by the ann_prediction function should be available in the models folder.
 
+## Dataset Credit
 
-![bar_results](https://github.com/daistmarco/PredictingPulsarStar/assets/114780077/aeb61799-9168-403e-869a-bea688a60a69)
+This project uses a modified version of the HTRU2 dataset from Kaggle. The original HTRU2 dataset was sourced from the University of Manchester [School of Physics and Astronomy](https://www.physics.manchester.ac.uk/), and can be found at the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/HTRU2).
+
+We would like to acknowledge and thank Dr. Robert Lyon from the University of Manchester for making this dataset available for use.
 
