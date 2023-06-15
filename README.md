@@ -3,7 +3,11 @@
 The project predicting pulsar stars comes from a competition from the organisation Kaggle which has already taken place before starting this project. The project files and the machine learning under taken were all done using Python and presented in Notebooks. Due to many Neutron Stars there is a lot of data to be researched to find the rare type of neutron star, a pulsar which produces radio emission detecable from Earth. Testing all potential pulsars stars is time consuming, this leads to the goal of the project which is predict if a neutron star is also a pulsar star which can lead to prioritising pedicted pulsar stars over others. 
 
 
-insert participants
+The following are the team members of the project:
+
+-----
+-----
+Kathrin Muller: <https://github.com/KathrinMM>
 
 
 ### Installation and Setup
