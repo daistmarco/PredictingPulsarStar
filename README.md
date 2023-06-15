@@ -6,7 +6,7 @@ The project predicting pulsar stars comes from a competition from the organisati
 ### Installation and Setup
 This project provides tools for analyzing the HTRU2 dataset using machine learning techniques. One of the main functions provided is the ann_prediction function, which allows you to make predictions on new data using a pre-trained ANN model. These are the necessary components you are need in order to set the project up localy. The data is linked within the information below which was provided from kaggle that leads you to the changed data set provided by kaggle which had been altered for this competition, where the original data set from the University of Manchester has no missing values.
 
-The project was carried out in JupyterLab using Python Version_________.
+The project was carried out in JupyterLab using Python Version 3.9 and 3.11 interchangeably.
 
 Listed below are all necessary dependencies you require to replicate the project yourself:
 - os
