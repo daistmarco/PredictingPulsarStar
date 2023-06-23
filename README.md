@@ -10,6 +10,16 @@ This project aims to predict whether a candidate in the dataset is a pulsar usin
 - Marco Fischer: [GitHub](https://github.com/daistmarco)
 - Kathrin Muller: [GitHub](https://github.com/KathrinMM)
 
+## Jupyter Notebooks
+
+This project consists of three Jupyter Notebooks that serve different purposes:
+
+1. **PulsarStarClassification.ipynb**: This notebook focuses on Exploratory Data Analysis (EDA) and training various models for pulsar star classification. It includes data preprocessing, feature engineering, model training, and evaluation. The notebook provides insights into the data and compares the performance of different machine learning algorithms.
+
+2. **Predictions.ipynb**: In this notebook, you will find a pre-trained model that has been selected as the best model for pulsar star classification. It can be used to make predictions on new data without the need for retraining. The notebook demonstrates how to load the trained model and perform predictions on unseen data.
+
+3. **ANN_comparison.ipynb**: This notebook compares two Artificial Neural Network (ANN) models for pulsar star classification. It includes a baseline ANN model and an optimized version using Principal Component Analysis (PCA) and polynomial features. The notebook presents the comparison of these models, including their performance metrics and insights gained from the analysis.
+
 ## Installation and Setup
 
 To set up the project locally, follow these steps:
